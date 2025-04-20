@@ -1,0 +1,60 @@
+# rock papper scissors game
+
+import random
+
+
+cs = 0 
+us = 0
+print("Whenever you want to quit the game just enter Q to quit")
+words = ("Rock", "Papper","Scissors")
+while True:
+  user_input = input("Enter a choice from Rock , Papper , Scissors : (R/P/S)  ").upper()
+  ci = random.choice(words)
+  if user_input == "R":
+    ui = "Rock"
+
+    print("Your choice is:" , ui)
+    print("computer choice is:", ci)
+    if ci == "Rock":
+      print("Draw")
+
+    elif ci == "Papper":
+      print("Computer won")
+      cs += 1
+    else:
+      print("You won")
+      us += 1
+  elif user_input == "P":
+    ui = "Papper"
+    print("Your choice is:",  ui)
+    print("Computer choice is:", ci)
+    if ci == "Rock":
+      print("You won")
+      us += 1
+    elif ci == "Papper":
+      print("Draw")
+    else:
+      print("Computer won")
+      cs += 1
+  elif user_input == "S":
+    ui = "Scissors"
+    print("Your choice is :" ,ui)
+    print("Computer choice is: ", ci)
+    if ci == "Rock":
+      print("Computer won")
+      cs += 1
+    elif ci == "Papper":
+      print("You won")
+      us += 1
+    else:
+      print("Draw")
+
+  elif user_input == "Q":
+    print("Thanks for playing the game")
+    print("Your score is:", us)
+    print("Computer score is:", cs)
+    break
+  else:
+    print("Invalid input please enter R,P,S to play or Q to quit")
+
+
