@@ -1,0 +1,10 @@
+import random
+while True:
+  a = input("rolls the die?: (y/n) ").lower()
+  if a == "y":
+    print(((random.randint(1,6)),(random.randint(1,6))))
+  elif a == "n":
+    print("Thanks for playing!")
+    break
+  else:
+    print("Invalid input")
