@@ -1,4 +1,6 @@
 # God-s-mini-projects
 
 
-hello my name is god im using this repository to store my mini projects which i made when i was a beginner and learning python there might be many mistakes in my codes but im improving myself daily
+Hello, my name is God. This repository contains mini projects I developed during my early journey with Python. While some code may have mistakes, I'm continuously working on improving my skills.
+
+A few of the projects are incomplete or experimental, and I plan to upgrade and expand on some of them in the future.
