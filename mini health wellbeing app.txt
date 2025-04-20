@@ -1,0 +1,108 @@
+
+print("Welcome to health wellbeing app, I hope you are doing well")
+your_sleep = set()
+
+inp = input(" type s for sleep\n type d for diet\n,So what do u want to check up?: ").lower()
+if inp == "s":
+
+  m = "meditation"
+  e = "eat early"
+  ms = "morning sun light"
+  n = "no screen time before sleep 30 min before sleep"
+  wt = "went to bed on time"
+  sr = "sleep routiune"
+  ex = " exercise"
+  hr = "sleep for 7+ hours"
+
+
+  ideal_sleep = {ms,n,wt,sr, ex, hr,m,e}
+
+
+  print("U have to answer some question to evaluate ur performance: ")
+
+  w1 = input("1) did u followed sleep routine routine?: (y/n)  ").lower()
+  if w1 == "y":
+    your_sleep.add(sr)
+  elif w1 == "n":
+    pass
+  else:
+    print("invalid input")
+
+  m1 = input("2) did u meditated?: (y/n)  ").lower()
+  if m1 == "y":
+    your_sleep.add(m)
+  elif m1 == "n":
+    pass
+  else:
+    print("invalid input")
+
+  e1 = input("3) Did u eat early?: (y/n)  ").lower()
+  if e1 == "y":
+    your_sleep.add(e)
+  elif e1 == "n":
+    pass
+  else:
+    print("invalid input")
+
+
+
+  wt1 = input("4) Did u went on bed on time?: (y/n)  ").lower()
+
+  if wt1 == "y":
+    your_sleep.add(wt)
+  elif wt == "n":
+    pass
+  else:
+    print("invalid input")
+
+  hr1 = input("5) Did u sleep for 7+ hours?: (y/n)  ").lower()
+  if  hr1 == "y":
+    your_sleep.add(hr)
+  elif hr == "n":
+    pass
+  else:
+    print("invalid input")
+
+  ex1 = input("6) Did u did exercise?: (y/n)  ").lower()
+  if ex1 == "y":
+    your_sleep.add(ex)
+  elif ex == "n":
+    pass
+  else:
+    print("invalid input")
+
+  n1 = input("7) Did u not used screen 30 min before sleep?: (y/n)  ").lower()
+  if n1 == "y":
+    your_sleep.add(n)
+  elif n == "n":
+    pass
+  else :
+    print ("invalid input")
+
+  ms1 = input("8) Did u got morning sun light?: (y/n)  ")
+  if ms1 == "y":
+    your_sleep.add(ms)
+  elif ms == "n":
+    pass
+  else:
+    print("invalid input")
+
+  print("you followed these things:-\n", your_sleep)
+
+
+
+
+
+  if your_sleep == ideal_sleep:
+    print("You u doing great dude, Keep it up")
+
+  else:
+    missed = ideal_sleep - your_sleep
+
+  print("You need to improve on these things:-\n",ideal_sleep,"\nSo that you can have a good night sleep")
+  print("Thanks for using this app hope you have a good night sleep")
+
+
+else:
+  print("Sorry this feature is not available yet")
+
