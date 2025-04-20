@@ -1,0 +1,20 @@
+import random
+
+print("I WILL TELL YOU HOW MUCH PERCENTAGE YOU ARE GAY!")
+
+name = input("Enter your name: ")
+
+
+predefined_results = {
+    "krish": 100,
+    "lakshya": 90,
+    "sanu": 69,
+    "utkarsh":00,
+}
+
+if name.lower() in predefined_results:
+    percentage = predefined_results[name.lower()]
+else:
+    percentage = random.randint(0, 100)  
+
+print(f"{name}, you are {percentage}% gay. Congrats!")

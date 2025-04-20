@@ -1,0 +1,70 @@
+
+print("hello bhahiyo aur sajjano me hu ambhitabh bachhan aj ham khelne ja rhe hai kaun banega carrorepati")
+print("pehla sawaal aapki screen par ye raha")
+q1 = '''what is the capital of india?
+1. delhi  
+2. mumbai  
+3. kolkata  
+4. uttar pradesh'''
+q2 = '''what is the capital of uttar pradesh?
+1. delhi
+2. agra
+3. lucknow
+4. bihar'''
+q3 = '''who made brahmos missile?
+1. america
+2. india
+3. china
+4. russia + india'''
+q4 = '''how many countries are part of the euroupean union
+1. 10
+2. 47
+3. 27
+4. 50'''
+q5 = '''su-57 is a fighter jet of which country?
+1. india
+2. china
+3. russia
+4. usa'''
+
+
+print(q1)
+a = int(input("Enter your answer: "))
+if a == 1:
+  print("sahi jawab aap jeet chuke hai 1 hajar")
+else:
+  print("galat jabab apka safar yahi khatam hota hai") 
+  exit()
+
+print(q2)
+a1 = int(input("Enter your answer: "))
+if a1 == 3:
+  print("sahi jawab aap jeet chuke hai 2 hajar rupey")
+else:
+  print("galat jawab aap ka safar yahi khatam hota hai")
+  exit()
+
+print(q3)
+a2 = int(input("Enter your answer: "))
+if a2 == 4:
+  print("sahi jawab aap jeet chuke hai 3 hajar rupey")
+else:
+  print("galat jawab aap ka safar yahi khatam hota hai")
+  exit()
+
+print(q4)
+a3 = int(input("Enter your answer: "))
+if a3 == 3:
+  print("sahi jawab aap jeet chuke hai 5 hajar rupey")
+else:
+  print("galat jawab aap ka safar yahi khatam hota hai")
+  exit()
+
+print(q5)
+a4 = int(input("Enter your answer: "))
+if a4 == 3:
+  print("sahi jawab aap jeet chuke hai 10 hajar rupey")
+else:
+  print("galat jawab app ka safar yahi khatam hota hai")
+exit()
+
