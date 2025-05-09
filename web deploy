@@ -1,0 +1,41 @@
+from flask import Flask, request, render_template_string
+import random
+
+app = Flask(__name__)
+
+@app.route('/', methods=['GET', 'POST'])
+def hello_world():
+    if request.method == 'POST':
+        name = request.form['name']
+        predefined_results = {
+            "krish": 100,
+            "lakshya": 90,
+            "sanu": 69,
+            "utkarsh": 0,
+        }
+
+        if name.lower() in predefined_results:
+            percentage = predefined_results[name.lower()]
+        else:
+            percentage = random.randint(0, 100)
+
+        return render_template_string("""
+            <h1 style="text-align: center;">Gay Percentage Calculator</h1>
+            <div style="text-align: center;">
+                <p style="font-size: 24px;">{{ name }}, you are {{ percentage }}% gay. Congrats!</p>
+                <a href="/" style="text-decoration: none; background: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px;">Try Again</a>
+            </div>
+        """, name=name, percentage=percentage)
+
+    return render_template_string("""
+        <h1 style="text-align: center;">Gay Percentage Calculator</h1>
+        <div style="text-align: center;">
+            <form method="POST" style="margin: 20px;">
+                <input type="text" name="name" placeholder="Enter your name" required style="padding: 10px; margin: 10px;">
+                <button type="submit" style="background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Calculate</button>
+            </form>
+        </div>
+    """)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
